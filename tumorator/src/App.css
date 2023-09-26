@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#background-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative; /* Change to relative */
+    left: 0;
+    top: 0;
+    z-index: 1; /* Increase the z-index to bring it to the front */
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+    z-index: 2; /* Increase the z-index to be above the video */
+}
+
+/* Remove z-index from other elements */
+.sub-text {
+    color: rgba(255, 255, 255, 0.68);
+    text-align: center;
+    font-family: Avenir;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main-text {
+    color: white;
+    text-align: center;
+    font-family: Avenir;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.banner-logo {
+    width: 150px;
+    height: 150px;
+}
+
+.info-section {
+    background-image: url("assets/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.info-maintext{
+    color: #000;
+    font-family: Avenir;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    width: 500px;
+}
+.info-subtext{
+    color: #000;
+    font-family: Avenir;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 60px;
+}
+.grid-item {
+    padding: 100px;
+
+
+}
+
+
+.counter{
+    color: #000;
+    /*text-align: center;*/
+    font-family: Avenir;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.info-subtext-percentage{
+    width: 400px;
+    color: #000;
+    font-family: Avenir;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.small-text{
+    color: #000;
+    font-family: Avenir;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.info-maintext-percentage-2{
+    color: #000;
+    font-family: Avenir;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.percentage-section{
+    padding-bottom: 30px;
+}
+
+/*.spline-container {*/
+/*    width: 1000px;*/
+/*    height: 1000px;*/
+/*}*/
+.description{
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+.description-text{
+    text-align: center;
+    color: #000;
+    font-family: Avenir;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /*width: 916px;*/
+}
+.description-text-sub{
+    color: #8D8D8D;
+    text-align: center;
+    font-family: Avenir;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
